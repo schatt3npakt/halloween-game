@@ -9,6 +9,11 @@
   --hw-info: #56a8e6;
 }
 
+::selection {
+  background-color: var(--hw-secondary);
+  color: var(--hw-primary);
+}
+
 html {
   background-color: var(--hw-primary);
 }

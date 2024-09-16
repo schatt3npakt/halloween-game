@@ -8,6 +8,7 @@
       </li>
     </ul>
   </div>
+  <span class="text-sm">{{ appVersion }}</span>
 </template>
 
 <script setup lang="ts">
@@ -18,8 +19,8 @@
   const { t } = useI18n();
   const mainMenuRoutes = [
     {
-      route: RouterRoutes.CARTRIDGE_SELECT,
-      text: t("router.routes." + RouterRoutes.CARTRIDGE_SELECT),
+      route: RouterRoutes.CASE_SELECT,
+      text: t("router.routes." + RouterRoutes.CASE_SELECT),
     },
     {
       route: RouterRoutes.SETTINGS,
@@ -30,16 +31,23 @@
       text: t("router.routes." + RouterRoutes.ABOUT),
     },
   ];
+  const appVersion = import.meta.env.VITE_APP_VERSION;
 </script>
 
 <style scoped>
   .wrapper {
     border: 1px solid var(--hw-secondary);
-    margin: 0 1rem;
+    margin: 0 1rem 2rem 1rem;
     padding: 1rem;
 
-    li {
-      margin-bottom: 0.75rem;
+    li:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    + span {
+      display: block;
+      width: 100%;
+      text-align: center;
     }
   }
 </style>

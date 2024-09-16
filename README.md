@@ -7,7 +7,7 @@ A text-based ghost hunting game.
 ```bash
 nvm use
 npm i
-npm run serve
+npm run dev
 ```
 
 # GDD
