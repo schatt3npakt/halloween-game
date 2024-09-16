@@ -1,0 +1,31 @@
+@import url("./fonts.css");
+
+:root {
+  --hw-primary: #2e1b1b;
+  --hw-secondary: #f4f4f4;
+  --hw-danger: #e65656;
+  --hw-success: #78e656;
+  --hw-warning: #e6d356;
+  --hw-info: #56a8e6;
+}
+
+html {
+  background-color: var(--hw-primary);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-underline-offset: 0.25rem;
+}

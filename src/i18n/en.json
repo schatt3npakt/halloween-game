@@ -1,0 +1,14 @@
+{
+  "viewTitle": {
+    "title": "Halloween Game<br /><span class='text-sm'>Ghost Hunting Client<br />bitheart software</span>"
+  },
+  "router": {
+    "routes": {
+      "/": "Title",
+      "/cases": "Cases",
+      "/play": "Spielen",
+      "/settings": "Settings",
+      "/about": "About"
+    }
+  }
+}
