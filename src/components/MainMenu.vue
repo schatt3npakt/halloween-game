@@ -50,4 +50,11 @@
       text-align: center;
     }
   }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      margin: 0 auto 4rem auto;
+      max-width: 640px;
+    }
+  }
 </style>

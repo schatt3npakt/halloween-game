@@ -31,6 +31,27 @@ ol {
   margin: 0;
 }
 
+*:focus-visible {
+  outline: 2px solid var(--hw-secondary);
+  outline-offset: 0.25rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  *:focus-visible {
+    animation: blink-outline 1s steps(2) infinite;
+  }
+}
+
 a {
   text-underline-offset: 0.25rem;
+}
+
+@keyframes blink-outline {
+  from {
+    outline: 2px solid var(--hw-secondary);
+  }
+
+  to {
+    outline: 2px solid transparent;
+  }
 }
