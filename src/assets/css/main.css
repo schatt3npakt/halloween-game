@@ -46,6 +46,16 @@ a {
   text-underline-offset: 0.25rem;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:hover {
+    animation: blink-opacity 1s steps(2) infinite;
+  }
+}
+
 @keyframes blink-outline {
   from {
     outline: 2px solid var(--hw-secondary);
@@ -53,5 +63,15 @@ a {
 
   to {
     outline: 2px solid transparent;
+  }
+}
+
+@keyframes blink-opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    outline: 0.5;
   }
 }

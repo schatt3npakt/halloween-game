@@ -1,6 +1,12 @@
 {
   "viewTitle": {
-    "title": "Halloween Game<br /><span class='text-sm'>Ghost Hunting Client<br />bitheart software</span>"
+    "title": "Halloween Game<br /><span class='text-sm'>Ghost Hunting Client<br />bitheart software</span>",
+    "instruction": {
+      "gamepad": "UP / DOWN: Select, A: Confirm",
+      "keyboard": "TAB: Select, SPACE: Confirm",
+      "touch": "Touch to select",
+      "pointer": "Click to select"
+    }
   },
   "router": {
     "routes": {

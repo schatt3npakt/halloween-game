@@ -13,7 +13,6 @@
 * {
   font-family: "IBM BIOS", monospace;
   color: var(--hw-secondary);
-  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -38,10 +37,24 @@
   }
 
   .text-md {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .text-sm {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .text-lg {
+    font-size: 2rem;
+  }
+
+  .text-md {
+    font-size: 1.5rem;
+  }
+
+  .text-sm {
+    font-size: 1.25rem;
   }
 }

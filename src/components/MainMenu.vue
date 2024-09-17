@@ -1,12 +1,15 @@
 <template>
   <div class="wrapper">
-    <ul>
-      <li v-for="route in mainMenuRoutes" :key="route.route">
-        <RouterLink class="text-md" :to="route.route">{{
-          route.text
-        }}</RouterLink>
-      </li>
-    </ul>
+    <div>
+      <ul>
+        <li v-for="route in mainMenuRoutes" :key="route.route">
+          <RouterLink class="text-md" :to="route.route">{{
+            route.text
+          }}</RouterLink>
+        </li>
+      </ul>
+    </div>
+    <div class="text-md">{{ $t("viewTitle.instruction." + inputMethod) }}</div>
   </div>
   <span class="text-sm">{{ appVersion }}</span>
 </template>
@@ -15,7 +18,9 @@
   import { RouterLink } from "vue-router";
   import { RouterRoutes } from "../ts/Router";
   import { useI18n } from "vue-i18n";
+  import { useInputMethod } from "../composables/useInputMethod";
 
+  const { inputMethod } = useInputMethod();
   const { t } = useI18n();
   const mainMenuRoutes = [
     {
@@ -36,9 +41,15 @@
 
 <style scoped>
   .wrapper {
-    border: 1px solid var(--hw-secondary);
+    display: grid;
     margin: 0 1rem 2rem 1rem;
-    padding: 1rem;
+    grid-template-columns: 1fr;
+
+    > div {
+      border: 1px solid var(--hw-secondary);
+      border-collapse: collapse;
+      padding: 1rem;
+    }
 
     li:not(:last-child) {
       margin-bottom: 1.5rem;
@@ -55,6 +66,11 @@
     .wrapper {
       margin: 0 auto 4rem auto;
       max-width: 640px;
+      grid-template-columns: 1fr 1fr;
+
+      > div {
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+      }
     }
   }
 </style>
