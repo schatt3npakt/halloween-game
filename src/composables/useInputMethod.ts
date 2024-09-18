@@ -37,6 +37,22 @@ export function useInputMethod() {
     window.addEventListener("touchstart", handleTouchInput);
     window.addEventListener("pointerdown", handlePointerInput);
     window.addEventListener("mousemove", handlePointerInput);
+
+    function checkGamepadInputs() {
+      const gamepads = navigator.getGamepads();
+      for (const gamepad of gamepads) {
+        if (gamepad) {
+          handleGamepadInput();
+          break;
+        }
+      }
+    }
+
+    const gamepadInterval = setInterval(checkGamepadInputs, 100);
+
+    onUnmounted(() => {
+      clearInterval(gamepadInterval);
+    });
   });
 
   onUnmounted(() => {

@@ -10,11 +10,26 @@
   },
   "router": {
     "routes": {
-      "/": "Title",
-      "/cases": "Cases",
-      "/play": "Spielen",
-      "/settings": "Settings",
-      "/about": "About"
+      "/": {
+        "title": "Title",
+        "description": "The game's title screen"
+      },
+      "/cases": {
+        "title": "Cases",
+        "description": "Select a case to play"
+      },
+      "/play": {
+        "title": "Play",
+        "description": "Play the selected case"
+      },
+      "/settings": {
+        "title": "Settings",
+        "description": "Configure the game"
+      },
+      "/about": {
+        "title": "About",
+        "description": "Information about the game"
+      }
     }
   }
 }
