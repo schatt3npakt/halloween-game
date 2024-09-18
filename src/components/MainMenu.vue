@@ -63,9 +63,7 @@
 
 <style scoped>
   .wrapper {
-    display: grid;
-    margin: 0 1rem 2rem 1rem;
-    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
 
     p {
       margin: 0;
@@ -93,17 +91,20 @@
     }
 
     .menu-description {
+      display: none;
       grid-area: b;
     }
 
     .controls {
       grid-area: c;
       text-align: center;
+      border-top: none;
     }
   }
 
   @media (min-width: 48rem) {
     .wrapper {
+      display: grid;
       margin: 0 auto 4rem auto;
       max-width: 62.5rem;
       grid-template-columns: 1fr 1fr;
@@ -111,6 +112,14 @@
 
       > div {
         padding: 1.5rem 1.5rem 2rem 1.5rem;
+      }
+
+      .menu-description {
+        display: block;
+      }
+
+      .menu-items {
+        border-right: none;
       }
     }
   }
