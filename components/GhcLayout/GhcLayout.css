@@ -1,0 +1,47 @@
+.ghc-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: calc(100vh - 31px);
+  max-width: 100%;
+
+  * {
+    color: var(--ghc-secondary);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  > div {
+    border: 2px solid var(--ghc-secondary);
+    border-collapse: collapse;
+    padding: 1rem;
+    max-height: 100%;
+    overflow: auto;
+    hyphens: auto;
+
+    ul {
+      display: flex;
+      flex-flow: column;
+      gap: 0.5rem;
+    }
+  }
+
+  div:nth-child(1) {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    border-bottom: none;
+  }
+}

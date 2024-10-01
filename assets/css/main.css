@@ -1,27 +1,29 @@
 @import url("./fonts.css");
 
 :root {
-  --hw-primary: #2e1b1b;
-  --hw-secondary: #f4f4f4;
-  --hw-danger: #e65656;
-  --hw-success: #78e656;
-  --hw-warning: #e6d356;
-  --hw-info: #56a8e6;
+  --ghc-primary: #2e1b1b;
+  --ghc-secondary: #f4f4f4;
+  --ghc-danger: #e65656;
+  --ghc-success: #78e656;
+  --ghc-warning: #e6d356;
+  --ghc-info: #56a8e6;
 }
 
 ::selection {
-  background-color: var(--hw-secondary);
-  color: var(--hw-primary);
+  background-color: var(--ghc-secondary);
+  color: var(--ghc-primary);
 }
 
 html {
-  background-color: var(--hw-primary);
+  background-color: var(--ghc-primary);
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 ul,
@@ -32,7 +34,7 @@ ol {
 }
 
 *:focus-visible {
-  outline: 2px solid var(--hw-secondary);
+  outline: 2px solid var(--ghc-secondary);
   outline-offset: 0.25rem;
 }
 
@@ -58,7 +60,7 @@ a:hover {
 
 @keyframes blink-outline {
   from {
-    outline: 2px solid var(--hw-secondary);
+    outline: 2px solid var(--ghc-secondary);
   }
 
   to {

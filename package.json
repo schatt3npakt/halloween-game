@@ -1,22 +1,14 @@
 {
-  "name": "halloween-game",
-  "private": true,
-  "version": "0.1.0",
-  "type": "module",
+  "name": "ghost-hunting-client",
+  "version": "1.0.0",
+  "description": "A text-based ghost hunting game.",
+  "main": "index.html",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "live-server"
   },
-  "dependencies": {
-    "vue": "^3.4.37",
-    "vue-i18n": "^10.0.1",
-    "vue-router": "^4.4.5"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.2",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.1",
-    "vue-tsc": "^2.0.29"
+    "live-server": "^1.2.2"
   }
 }

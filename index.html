@@ -2,12 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halloween Game</title>
+    <title>ghost hunting client | online robot ghost hunting utility</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./components/GhcTitleBar/GhcTitleBar.css" />
+    <link rel="stylesheet" href="./components/GhcLayout/GhcLayout.css" />
+    <style>
+      body,
+      html {
+        background-color: var(--ghc-primary);
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div class="ghc-title-bar text-sm">
+      <span>Ghost Hunting Client</span>
+    </div>
+
+    <main class="ghc-layout">
+      <div>
+        <h1 class="text-lg">Ghost Hunting Client</h1>
+        <p class="text-md">Copyright bitheart software, 1998</p>
+      </div>
+      <div>
+        <ul>
+          <li class="text-md text-uppercase">
+            <a href="/case-select">Case select</a>
+          </li>
+          <li class="text-md text-uppercase">
+            <a href="/settings">Settings</a>
+          </li>
+          <li class="text-md text-uppercase"><a href="/about">About</a></li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
